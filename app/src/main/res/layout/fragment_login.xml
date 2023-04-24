@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".presentation.sign_in.LoginFragment">
+
+    <TextView
+        style="@style/TitleText"
+        android:id="@+id/tvGreetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Welcome Back"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right_guideline"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        style="@style/AuthFormStyle"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/background_rounded_gray_secondary"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="56dp"
+        android:padding="12dp"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:drawablePadding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right_guideline"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tvGreetings" />
+
+    <EditText
+        style="@style/AuthFormStyle"
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_rounded_gray_secondary"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="56dp"
+        android:padding="12dp"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/etEmail"
+        app:layout_constraintStart_toStartOf="@+id/etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <TextView
+        android:id="@+id/btnForgotPassword"
+        style="@style/HelperText2"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Forgot Password"
+        app:layout_constraintEnd_toEndOf="@+id/etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/btnLogin"
+        style="@style/Headline.h2"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/background_rounded_gray_secondary"
+        android:backgroundTint="@color/main_color2"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="login"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnNewAccount"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right_guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/btnForgotPassword"
+        app:layout_constraintVertical_bias="0.491" />
+
+    <TextView
+        style="@style/HelperText"
+        android:id="@+id/btnNewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:clickable="true"
+        android:layout_marginBottom="8dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:text=" create new account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right_guideline"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left_guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="32dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="32dp" />
+
+    <ProgressBar
+        android:indeterminateTint="@color/main_color2"
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNewAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "154615109538",
+    "project_id": "noteapp-4ee9c",
+    "storage_bucket": "noteapp-4ee9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154615109538:android:a7ae243772c2d6c28c44fb",
+        "android_client_info": {
+          "package_name": "com.note.reminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154615109538-q1efv6jrrk248h7mpnjj4bmb342pjomn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkoKSdiwc1nd0QMkq_TF2j6KvwU0t1EdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154615109538-q1efv6jrrk248h7mpnjj4bmb342pjomn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
